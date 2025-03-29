@@ -1,16 +1,21 @@
-import { Box, CssBaseline, Typography } from "@mui/material";
+import { Container, CssBaseline, Paper, Stack } from "@mui/material";
 import "./App.css";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
       <CssBaseline />
-      <Typography variant="h1">To Do App</Typography>
-      <Box>
-        {/* <DeleteAllBtn/>
-<Form/>
-<Timers/> */}
-      </Box>
+      <Container maxWidth="md" sx={{ pt: 3 }}>
+        <Paper elevation={3}>
+          <Stack sx={{ p: 3 }}>
+            <Header />
+            {/* <Pomodoro />
+        <Tasks />
+        <Overview /> */}
+          </Stack>
+        </Paper>
+      </Container>
     </>
   );
 }
